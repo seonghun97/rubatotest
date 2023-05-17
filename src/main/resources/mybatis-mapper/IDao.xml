@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0/EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.rubato.home.dao.IDao">
+	
+	<insert id="boardWriteDao">
+		INSERT INTO 
+			rubafreeboard(bnum, bname, btitle, bcontent, bhit, buserid, breplycount, bfilecount)
+				VALUES
+					(rfb_seq.nextval, #{param1}, {param2}, {param3},0, {param4}, 0,{param5})
+	</insert>
+</mapper>
