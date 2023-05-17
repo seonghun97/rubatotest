@@ -10,6 +10,15 @@
 		INSERT INTO 
 			rubafreeboard(bnum, bname, btitle, bcontent, bhit, buserid, breplycount, bfilecount)
 				VALUES
-					(rfb_seq.nextval, #{param1}, {param2}, {param3},0, {param4}, 0,{param5})
+					(rfb_seq.nextval, #{param1}, #{param2}, #{param3},0, #{param4}, 0,#{param5})
+					
 	</insert>
+	
+	<select id="boardListDao" resultType="com.rubato.home.dto.RfboardDto">
+		SELECT * FROM rubafreeboard ORDER BY bnum DESC
+	</select>
+	<select id="boardTotalCountDao" resultType="int">
+		SELECT COUNT(*) FROM rubafreeboard
+	</select>
+	
 </mapper>
