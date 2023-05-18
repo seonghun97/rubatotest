@@ -7,10 +7,8 @@
     <title>클래식기타 커뮤니티</title>
     <link rel="stylesheet" type="text/css" href="/resources/css/common.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/board_left.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/board_list_main.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
 </head>
 <body>
   <div id="wrap">
@@ -45,86 +43,121 @@
           <img src="/resources/img/btn_search.gif">
         </div>
       </article> <!-- login box 끝 -->
-      <nav id="sub_menu"> <!-- 서브 메뉴 시작 -->
+      <article id="guestbook"> <!-- guestbook 시작 -->
+        <div id="guestbook_title">
+          <img src="/resources/img/ttl_memo.gif">
+        </div>
         <ul>
-          <li><a href="board_list">+ 자유 게시판</a></li>
-          <li><a href="#">+ 방명록</a></li>
-          <li><a href="#">+ 공지사항</a></li>
-          <li><a href="#">+ 등업 요청</a></li>
-          <li><a href="#">+ 포토갤러리</a></li>
+          <li>안녕하세요!</li>
+          <li>안녕하세요!</li>
+          <li>안녕하세요!</li>
+          <li>안녕하세요!</li>
         </ul>
-      </nav> <!-- 서브 메뉴 끝 -->
-      <article id="sub_banner">
-        <ul>
-          <li><img src="/resources/img/banner1.png"></li>
-          <li><img src="/resources/img/banner2.png"></li>
-          <li><img src="/resources/img/banner3.png"></li>
-        </ul>
-      </article>
+      </article> <!-- guestbook 끝 -->
     </aside>
     <main>
       <section id="main">
-        <img src="/resources/img/comm.gif">
-        <h2 id="board_title">자유게시판</h2>
-        <div id="total_search">
-          <div id="total">▷ 총 5개의 게시물이 있습니다.</div>
-          <div id="search">
-            <div id="select_img"><img src="/resources/img/select_search.gif"></div>
-            <div id="search_select">
-              <select>
-                <option>제목</option>
-                <option>내용</option>
-                <option>글쓴이</option>
-              </select>
+        <img src="/resources/img/main_img.png">
+        <section id="notice_free_youtube"> <!-- 공지사항/자유게시판/유투브 시작 -->
+          <article id="notice"> <!-- 공지사항 -->
+            <div class="latest_title">
+              <img class="latest_img" src="/resources/img/latest1.gif">
+              <img class="more" src="/resources/img/more.gif">
+              <div class="clear"></div>
             </div>
-            <div id="search_input"><input type="text"></div>
-            <div id="search_btn"><img src="/resources/img/search_button.gif"></div>
-          </div>
-        </div> <!-- total search 끝 -->
-        <table>
-          <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>글쓴이</th>
-            <th>일시</th>
-            <th>조회수</th>
-          </tr>
-          <tr>
-            <td class="col1">1</td>
-            <td class="col2">
-              <a href="board_view">까스통님의 선물인 보드카가 정말 독하네요!!!</a>
-            </td>
-            <td class="col3">루바토</td>
-            <td class="col4">2022-09-30</td>
-            <td class="col5">13</td>
-          </tr>
-          <tr>
-            <td class="col1">2</td>
-            <td class="col2">
-              <a href="board_view">까스통님의 선물인 보드카가 정말 독하네요!!!</a>
-            </td>
-            <td class="col3">루바토</td>
-            <td class="col4">2022-09-30</td>
-            <td class="col5">13</td>
-          </tr>
-          <tr>
-            <td class="col1">3</td>
-            <td class="col2">
-              <a href="board_view">까스통님의 선물인 보드카가 정말 독하네요!!!</a>
-            </td>
-            <td class="col3">루바토</td>
-            <td class="col4">2022-09-30</td>
-            <td class="col5">13</td>
-          </tr>
-        </table> <!-- 게시판 목록 테이블 끝 -->
-        <div id="buttons">
-          <div class="col1">◀ 이전 1 다음 ▶</div>
-          <div class="col2">
-            <img src="/resources/img/list.png">
-            <a href="board_write"><img src="/resources/img/write.png"></a>
-          </div>
-        </div>
-      </section> <!-- section main 끝 -->
+            <div class="latest_content">
+              <img class="image" src="/resources/img/book_pen.gif">
+              <ul class="list">
+                <li>
+                  <div class="subject">루바토 개편과 사이트 이용...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+                <li>
+                  <div class="subject">루바토 개편과 사이트 이용...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+                <li>
+                  <div class="subject">루바토 개편과 사이트 이용...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+                <li>
+                  <div class="subject">루바토 개편과 사이트 이용...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+              </ul>
+            </div>
+          </article> <!-- 공지사항 끝 -->
+          <article id="freeBoard"> <!-- 자유게시판 -->
+            <div class="latest_title">
+              <img class="latest_img" src="/resources/img/latest2.gif">
+              <img class="more" src="/resources/img/more.gif">
+              <div class="clear"></div>
+            </div>
+            <div class="latest_content">
+              <img class="image" src="/resources/img/book_pen.gif">
+              <ul class="list">
+                <li>
+                  <div class="subject">까스통님의 선물인 보드카...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+                <li>
+                  <div class="subject">까스통님의 선물인 보드카...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+                <li>
+                  <div class="subject">까스통님의 선물인 보드카...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+                <li>
+                  <div class="subject">까스통님의 선물인 보드카...</div>
+                  <div class="date">2022-09-30</div>
+                  <div class="clear"></div>
+                </li>
+              </ul>
+            </div>
+          </article> <!-- 자유게시판 끝 -->
+          <article id="youtube"> <!-- 유투브 -->
+            <div class="latest_title">
+              <img class="latest_img" src="/resources/img/latest3.gif">
+              <img class="more" src="/resources/img/more.gif">
+              <div class="clear"></div>
+            </div>
+            <img id="youtube_img" src="/resources/img/bach.jpg">
+          </article><!-- 유투브 끝 -->
+        </section> <!-- 공지사항/자유게시판/유투브 끝 -->
+        <section id="gallery"> <!-- 갤러리 시작 -->
+          <img src="/resources/img/latest4.gif">
+          <div id="gallery_box"> <!-- gallery box 시작 -->
+            <div id="gallery_list"> <!-- gallery list 시작 -->
+              <div class="items">
+                <ul>
+                  <li><img src="/resources/img/img1.jpg"></li>
+                  <li>기타 페스티벌 4중주</li>
+                </ul>
+              </div>
+              <div class="items">
+                <ul>
+                  <li><img src="/resources/img/img1.jpg"></li>
+                  <li>기타 페스티벌 4중주</li>
+                </ul>
+              </div>
+              <div class="items">
+                <ul>
+                  <li><img src="/resources/img/img1.jpg"></li>
+                  <li>기타 페스티벌 4중주</li>
+                </ul>
+              </div>
+            </div> <!-- gallery list 끝 -->
+          </div> <!-- gallery box 끝 -->
+        </section> <!-- 갤러리 끝 -->
+      </section>
     </main>
     <div class="clear"></div>
     <footer> <!-- footer 시작 -->
